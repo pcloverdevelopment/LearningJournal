@@ -14,7 +14,7 @@ Relational DataBase Management System (*RDBMS*)
 : Same as above, but for a relational (1 of the 5 types of DBs) database
 
 Structured Query Language (*SQL*)
-: The tool (language) we use to interact with a (R)DBMS
+: The tool (language) we use to interact with a RDBMS
 
 ## 5 General Types of Databases
 1. Relational
