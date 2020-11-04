@@ -5,7 +5,7 @@
 ## ASP.NET Core
 
 * [About This Group](aspnetcore/about-this-group.md)
-
+* [Intro to RESTful APIs](aspnetcore/intro-restful-api.md)
 ---
 
 ## PostgreSQL
