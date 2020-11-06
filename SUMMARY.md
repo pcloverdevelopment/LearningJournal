@@ -11,6 +11,8 @@
 
 * [About This Group](postgresql/about-this-group.md)
 * [History and Story of Data](postgresql/history-and-story-of-data.md)
+* [SQL Basics](postgresql/sql-basics.md)
+* [SQL Terminology](postgresql/sql-terminology.md)
 
 ## Object Oriented Programming
 
