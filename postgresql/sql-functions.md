@@ -11,3 +11,10 @@
   - simply put, scalar functions run against each row of data as their input and output a value for each row of input.
   - Scalar functions operate on each record individually.
 
+### Some aggregate functions we can use
+- AVG()
+- COUNT()
+- MIN()
+- MAX()
+- SUM()
+
