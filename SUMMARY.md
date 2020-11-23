@@ -13,8 +13,9 @@
 * [History and Story of Data](postgresql/history-and-story-of-data.md)
 * [SQL Basics](postgresql/sql-basics.md)
 * [SQL Terminology](postgresql/sql-terminology.md)
-* [SQL Commands](postgresql/sql-commands.md)
+* [SQL Deep Dive](postgresql/sql-deep-dive.md)
 * [SQL Functions](postgresql/sql-functions.md)
+* [SQL Joins](postgresql/sql-joins.md)
 
 ## Object Oriented Programming
 

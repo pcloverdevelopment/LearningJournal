@@ -186,12 +186,13 @@ CREATE TABLE timezones (
 
 #### Postgres operators for working with dates
 
-Few snippets:
+**Getting current date**
 ```sql
 -- both get the current date in an ISO-8601 format
 SELECT NOW()::date;
 SELECT CURRENT_DATE:
 ```
+**Date casting and difference**
 ```sql
 -- convert the ISO-8601 format to something else.
 -- postgres docs have a bunch of documentation
@@ -207,6 +208,7 @@ SELECT NOW() - '1800/01/01';
 -- casts a string to a date to ISO-8601
 SELECT date '1800/01/01';
 ```
+**Age calculation**
 ```sql
 -- get the years months and days since a specified time
 -- returns format of: <no> years <no> mons <no> days
@@ -217,6 +219,7 @@ SELECT AGE(date '1800/01/01');
 -- returns format of: <no> years <no> mons <no> days
 SELECT AGE(date'1992/11/13', date '1800/01/01');
 ```
+**Extracting information**
 ```sql
 -- extracting information
 -- can replace YEAR with DAY or MONTH
@@ -226,6 +229,7 @@ SELECT EXTRACT (YEAR FROM date '1992/11/13') AS col_alius;
 -- can replace 'year' with 'day' or 'month'
 SELECT DATE_TRUNC('year', date '1992/11/13') AS col_alius
 ```
+**Intervals** (store and manipulate a period of time in years, months, days, hours, minutes, seconds, etc)
 ```sql
 -- use an interval when filtering
 SELECT *
@@ -233,19 +237,23 @@ FROM order
 WHERE purchaseDate <= now() - interval '30 days';
 ```
 
+#### Distinct keyword
+>Basic example:
 
+```sql
+SELECT DISTINCT <col1>, <col2>
+FROM <table>
+```
+> What it does: *Helps us remove duplicate rows from a select clause.*
 
+#### Sorting data
+>Basic example:
 
+```sql
+SELECT *
+FROM <table>
+ORDER BY <column> [ASC/DESC]
+```
+> What it does: *We can order our search results.* The default sort direction when using ORDER BY is ascending by default if you don't indicate the direction.
 
-
-
-
-
-
-
-
-
-
-
-
-
+Also note that you can use multiple columns in the order by clause, but we need to make sure to specify after each whether it should do so in an asc or desc way.
