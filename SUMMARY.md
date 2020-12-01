@@ -20,4 +20,6 @@
 ## Object Oriented Programming
 
 * [About This Group](object-oriented-programming/about-this-group.md)
+* [Fundamental Code Qualities](object-oriented-programming/fundamental-code-qualites.md)
+* [Basics of Object Oriented Programming](object-oriented-programming/oo-basics.md)
 
